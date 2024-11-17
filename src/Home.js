@@ -4,7 +4,7 @@ import Timeline from "./Timeline";
 const Home = () => {
     return (
         <div className="home">
-            <div className="header">
+            <div className="header" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/background13.jpg)`}}>
                 <h1>The Evolution of Latina/o/x Representation in American Sitcoms</h1>
             </div>
             <div className="content">

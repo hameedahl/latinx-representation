@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import { showplayer } from './clipsObj.js';
 import { showInformation, shows } from './informationObj.js';
-import { useState } from "react";
 import Footer from "./Footer.js";
 
 const ShowPlayer = () => {
@@ -10,7 +9,7 @@ const ShowPlayer = () => {
     var clipCount = 0;
     return (
         <div id="showplayer" style={{backgroundColor: `${showInformation[show].color}`}}>
-            <div className="header" style={{backgroundImage: `url(/images/${showInformation[show].background})`}}>
+            <div className="header" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/${showInformation[show].background})`}}>
                 <h1>{`${showplayer[show].name} (${showInformation[show].year})`}</h1>
             </div>
             <div className="content">
@@ -31,7 +30,7 @@ const ShowPlayer = () => {
                                             <p className="clipTitle">{clip.context}</p><br />
                                         </div>
                                         <div className="videoContent">
-                                            <video src={clip.clip} controls>
+                                            <video src={`${process.env.PUBLIC_URL}/${clip.clip}`} controls>
                                             Your browser does not support the video tag.
                                             </video>
                                         </div>

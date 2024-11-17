@@ -1,13 +1,14 @@
 import Home from "./Home";
 import ShowPlayer from "./ShowPlayer";
 import ShowInformation from "./ShowInformation";
-import Footer from "./Footer";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Router> 
+      <HashRouter> 
+        <ScrollToTop />
         <div className="pageContent">
             <Routes>
                 <Route index path="/" element={<Home/>} />
@@ -15,7 +16,7 @@ function App() {
                 <Route path="/show-player/:show" element={<ShowPlayer/>} />
             </Routes>
         </div>
-      </Router>
+      </HashRouter>
     </div>
   );
 }

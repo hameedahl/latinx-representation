@@ -7,13 +7,13 @@ const ShowInformation = () => {
     const { show } = useParams();
     return (
         <div id="showInfo" style={{backgroundColor: `${showInformation[show].color}`}}>
-            <div className="header" style={{backgroundImage: `url(/images/${showInformation[show].background})`}}>
+            <div className="header" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/${showInformation[show].background})`}}>
                 <h1>{`${showInformation[show].name} (${showInformation[show].year})`}</h1>
             </div>
             <div className="content">
                 <h2>Summary</h2><br />
                 <div className="summary">
-                    <div className="sumPoster"><img src={`/images/${showInformation[show].poster}`} alt="" /></div> 
+                    <div className="sumPoster"><img src={`${process.env.PUBLIC_URL}/images/${showInformation[show].poster}`} alt="" /></div> 
                     <div className="sumText">{showInformation[show].summary}<br /></div>
                 </div>
                 <h2>Historical Context</h2> <br />
