@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/latinx-tv-representation/static/css/main.4e5f9a8a.css",
+    "main.js": "/latinx-tv-representation/static/js/main.3d9e5c98.js",
+    "static/media/tv1.png": "/latinx-tv-representation/static/media/tv1.cd640a3899e58405bd03.png",
+    "static/media/background13.jpg": "/latinx-tv-representation/static/media/background13.0878790f3b4c19b45674.jpg",
+    "index.html": "/latinx-tv-representation/index.html",
+    "main.4e5f9a8a.css.map": "/latinx-tv-representation/static/css/main.4e5f9a8a.css.map",
+    "main.3d9e5c98.js.map": "/latinx-tv-representation/static/js/main.3d9e5c98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e5f9a8a.css",
+    "static/js/main.3d9e5c98.js"
+  ]
+}
