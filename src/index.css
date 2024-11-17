@@ -1,13 +1,179 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: #060214;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FFFFC7;
+}
+
+.header {
+    background-image: url(../public/images/background13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    text-shadow: 7px 2px 4px rgb(0, 0, 0);
+}
+
+.header h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.content {
+    font-size: 25px;
+    padding: 50px;
+}
+
+
+.home div {
+    display: block;
+}
+
+.App {
+    height: 100vh;
+    position: relative;
+}
+
+#timeline {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    top: 20px;
+}
+
+a { text-decoration: none; }
+
+#showInfo {
+    position: relative;
+}
+
+button {
+    border: none;
+    color: black;
+    padding: 15px;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.buttons {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+}
+
+button:hover {
+    box-shadow: -1px -1px 10px white;
+}
+
+.videoContent {
+    margin: auto;
+    position: relative;
+    width: 550px;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../public/images/tv1.png);
+}
+
+.highlights {
+    margin-bottom: 40px;
+}
+
+.highlights h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.clip {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.clips {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+}
+
+.highlights ul {
+    margin: auto;
+    width: 70%;
+    text-align: left;
+    list-style-position: outside;
+    list-style-type: square;
+}
+
+.videoContent video {
+    position: absolute;
+    object-fit: fill;
+    width: 370px; 
+    height: 280px;
+    left: 40%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+}
+
+.clipAnalysis {
+    width: 100%;
+}
+
+.clipHeader {
+    width: 100%;
+}
+
+.clip {
+    width: 600px;
+}
+
+#showplayer p, #showplayer li {
+    font-size: 18px;
+}
+
+.link:hover {
+    .showlink { fill: #ff94b6; }
+    .yearlink { fill: #ff94b6; }
+}
+
+.sumPoster img {
+    float: right; 
+    width: 300px;
+}
+
+.episodeContent {
+    border-bottom: 2px white dashed;
+    margin-bottom: 20px;
+}
+
+#footer  {
+    text-align: center;
+    background-color: inherit;
+    padding: 20px;
+    font-style: italic;
+    font-size: 18px;
 }
